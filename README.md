@@ -7,8 +7,6 @@ Welcome to **Abdulhadi Alhammak's Portfolio**! This project showcases my skills,
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
 
 ## Features
 
