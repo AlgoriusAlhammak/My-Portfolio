@@ -27,7 +27,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Raven is On Take-Off...");
-    let response = await fetch("http://localhost:5000/connect", {
+    let response = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -36,11 +36,12 @@ export const Contact = () => {
     });
     setButtonText("Send");
     let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Raven Has Successfully Landed'});
+    
+    if (result.success) {
+      setStatus({ success: true, message: 'Raven Has Successfully Landed'});
+      setFormDetails(formInitialDetails);
     } else {
-      setStatus({ succes: false, message: 'Raven could not be sent, try sending him again later.'});
+      setStatus({ success: false, message: 'Raven could not be sent, try sending him again later.'});
     }
   };
 
@@ -66,7 +67,7 @@ export const Contact = () => {
                       <input type="text" value={formDetails.firstName} placeholder="Explorer's First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Explorer's Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" value={formDetails.lastName} placeholder="Explorer's Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.email} placeholder="Explorer's Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />

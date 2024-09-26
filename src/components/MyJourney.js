@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png"
+import projImg1 from "../assets/img/project-img8.png";
+import projImg2 from "../assets/img/project-img9.jpeg"
 import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
+import projImg4 from "../assets/img/housing.jpg";
+import projImg5 from "../assets/img/portfolio.jpeg";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -42,13 +43,13 @@ export const MyJourney = () => {
       title: "Personal Portfolio",
       description: "HTML, JavaScript, React, React Bootstrap",
       imgUrl: projImg5,
-      SourceCode: " ",
+      SourceCode: "https://github.com/AlgoriusAlhammak/My-Portfolio.git",
     },
     {
-      title: "Coming Soon...",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      SourceCode: "",
+      title: "Car Counter",
+      description: "Python, OpenCV, YOLO, PyTorch, Numpy, Matplotlib",
+      imgUrl: projImg7,
+      SourceCode: "https://github.com/AlgoriusAlhammak/Car-Counter.git",
     },
   ];
 
