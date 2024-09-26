@@ -17,7 +17,11 @@ export default async (req, res) => {
             from: email,
             to: process.env.EMAIL_USER,
             subject: `Message from ${firstName} ${lastName}`,
-            text: `Phone: ${phone}\nMessage: ${message}`,
+            text: `You have received a new message from:
+                    Name: ${firstName} ${lastName}
+                    Email: ${email}
+                    Phone: ${phone}
+                    Message: ${message}`,
         };
 
         try {
