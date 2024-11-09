@@ -6,16 +6,8 @@ export const MailchimpForm = () => {
 
   return (
     <>
-      <MailchimpSubscribe
-        url={postUrl}
-        render={({ subscribe, status, message }) => (
-          <Newsletter
-            status={status}
-            message={message}
-            onValidated={formData => subscribe(formData)}
-            />
-        )}
-        />
+      {/* <
+       */}
     </>
   )
 }

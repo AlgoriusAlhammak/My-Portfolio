@@ -22,7 +22,7 @@ export const Footer = () => {
         <hr />
         <Row>
           <Col size={12} className="text-center">
-            <p>Algorius Alhammak | 2024. All Rights Reserved</p>
+            <p>Abdulhadi Alhammak | 2024. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

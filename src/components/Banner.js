@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Computer Scientist", "Programmer" ];
+  const toRotate = [ "Software Engineer", "Programmer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome To Algorius's Dungeon</span>
-                <h1>{`Hi! I'm Algorius a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Computer Scientist", "Programmer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I’m Abdulhadi Alhammak, but you can call me Algorius, I'm a passionate computer science student and aspiring software engineer. Here, you'll explore my journey through the realms of technology, creativity, and innovation. With a focus on practical applications and a love for problem-solving, I aim to craft solutions that not only meet requirements but also inspire and engage users. Join me as I share my projects, ideas, and the exciting adventures in the world of programming! </p>
-                   <a href="https://drive.google.com/file/d/1bLL6qCZHuKmtbICTVU6QnNUCiONgmOnK/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <span className="tagline">Welcome to My  Portfolio!</span>
+                <h1>{`Hi! I'm Abdulhadi a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Programmer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>I’m Abdulhadi Alhammak, a computer science student and aspiring software engineer. Here, you’ll find my journey through technology, creativity, and innovation. Driven by problem-solving and practical applications, I strive to create solutions that inspire and engage. Explore my projects, ideas, and adventures in programming! </p>
+                   <a href="https://drive.google.com/file/d/1tj5v-6XJwf2oZbp_rO7MdKYaW56rVhay/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                       <button onClick={() => console.log('Resume')}>Resume <ArrowRightCircle size={25} /></button>
                    </a> 
               </div>}

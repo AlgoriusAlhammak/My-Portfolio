@@ -18,10 +18,10 @@ export default async (req, res) => {
             to: process.env.EMAIL_USER,
             subject: `Message from ${firstName} ${lastName}`,
             text: `You have received a new message from:
-                    Name: ${firstName} ${lastName}
-                    Email: ${email}
-                    Phone: ${phone}
-                    Message: ${message}`,
+            Name: ${firstName} ${lastName}
+            Email: ${email}
+            Phone: ${phone}
+            Message: ${message}`,
         };
 
         try {
